@@ -33,8 +33,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link href="lightbox/lightbox.min.css" rel="stylesheet">
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
+      .lightbox-container { z-index: 99; }
       .gradient {
          background: rgb(29,37,85);
          background: linear-gradient(90deg, rgba(29,37,85,1) 0%, rgba(29,131,198,1) 100%) !important;
@@ -154,6 +157,36 @@
         </div>
       </div>
     </section>
+
+
+    <section class="overflow-hidden my-8">
+      <div class="container px-5 py-2 mx-auto">
+        <div class="flex flex-wrap -m-1 md:-m-2">
+          <div class="flex flex-wrap w-1/4">
+            <a class="w-full p-1 md:p-2 outline-none" href="img/pictures/box-opened.jpg" data-lightbox="gallery">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="img/pictures/box-opened.jpg"a>
+            </a>
+          </div>
+          <div class="flex flex-wrap w-1/4">
+            <a class="w-full p-1 md:p-2 outline-none" href="img/pictures/box.jpg" data-lightbox="gallery">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="img/pictures/box.jpg"a>
+            </a>
+          </div>
+          <div class="flex flex-wrap w-1/4">
+            <a class="w-full p-1 md:p-2 outline-none" href="img/pictures/hand.jpg" data-lightbox="gallery">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="img/pictures/hand.jpg"a>
+            </a>
+          </div>
+          <div class="flex flex-wrap w-1/4">
+            <a class="w-full p-1 md:p-2 outline-none" href="img/pictures/organisms.jpg" data-lightbox="gallery">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="img/pictures/organisms.jpg"a>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <section id="download-rules" class="bg-white border-b py-8">
       <div class="mx-auto container max-w-5xl flex flex-wrap pt-10 pb-12">
         <div class="w-full md:w-1/3 p-2 flex flex-col flex-grow flex-shrink">
@@ -245,7 +278,7 @@
                 <a href="mailto:contact@microscopicgame.com" class="no-underline hover:underline text-gray-800 hover:text-pink-500">contact@microscopicgame.com</a>
               </li>
               <li class="mt-2 md:mr-0">
-                <p class="text-gray-500 md:mb-6">© 2021. All Rights Reserved</p>
+                <p class="text-gray-500 md:mb-6">© 2022. All Rights Reserved</p>
               </li>
             </ul>
           </div>
@@ -357,5 +390,6 @@
     </script>
     <!-- End MailerLite Universal -->
 
+    <script src="lightbox/lightbox.min.js"></script>
   </body>
 </html>
